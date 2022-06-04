@@ -29,12 +29,15 @@ def play_again():
 def total(hand):
     total = 0
     for card in hand:
-	    if card == "J" or card == "Q" or card == "K": 
-	        total+= 10
-    	elif card == "A":
-	        if total >= 11:total+= 1
-	        else: total+= 11
-	    else: total += card
+        if card == "J" or card == "Q" or card == "K":
+            total+=10
+        elif card == "A":
+            if total >= 11:
+                total+=1
+            else:
+                total+=11
+        else:
+            total += card
     return total
 
 def hit(hand):
